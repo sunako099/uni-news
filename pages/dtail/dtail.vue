@@ -34,7 +34,7 @@
 					url: "https://ku.qingnian8.com/dataApi/news/detail.php",
 					data: this.options,
 					success: (res) => {
-						res.data.content = res.data.content.replace(/<ing/gi, '<img style="max-width:100%"')
+						res.data.content = res.data.content.replace(/<img/gi, '<img style="max-width:100%"')
 						this.detail = res.data
 						this.saveHistory()
 						uni.setNavigationBarTitle({
