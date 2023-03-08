@@ -55,6 +55,10 @@
 				let index = historyArr.findIndex(i => {
 					return i.id == this.detail.id
 				})
+				
+				if(index>=0){
+					historyArr.splice(index,1)
+				}
 				historyArr.unshift(item)
 				historyArr=historyArr.slice(0,10)
 				uni.setStorageSync("historyArr", historyArr)

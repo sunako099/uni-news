@@ -24,7 +24,7 @@
 				listArr: []
 			};
 		},
-		onLoad() {
+		onShow() {
 			this.getData()
 		},
 		methods: {
